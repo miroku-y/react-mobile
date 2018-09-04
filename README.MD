@@ -1,6 +1,7 @@
 ### npm install 
 ### npm run dev
 ### 结构
+```
 ├── .babelrc
 ├── REAMME.MD
 ├── dist
@@ -45,16 +46,16 @@
 │       ├── enum.js
 │       └── eventProxy.js
 └── webpack.config.js
-
+```
 ### 概览
 ![](https://github.com/yangdongMC/react-mobile/blob/master/src/images/show.gif)
 ### 涉及知识
-1.react 合成事件的使用，作用于表格上面的导航栏，可单独滑动，可点击滚动;
-2.react 兄弟组件间的数据传递，采用发布--订阅的方法实现;
-3.webpack4的配置
-4.antd-mobile
-5.scss
-6.index.html文件中引入的外部文件只在解决华为、QQ低版本手机浏览器中会出现的问题
+1.react 合成事件的使用，作用于表格上面的导航栏，可单独滑动，可点击滚动;<br>
+2.react 兄弟组件间的数据传递，采用发布--订阅的方法实现;<br>
+3.webpack4的配置;<br>
+4.antd-mobile;<br>
+5.scss;<br>
+6.index.html文件中引入的外部文件只在解决华为、QQ低版本手机浏览器中会出现的问题;<br>
 ### webpack.config.js配置错误
-1.babel-loader需要在全局编写一个.bablerc,然后修改对应的webpack.congfig中的rules;
-2.如果使用extract-text-webpack-plugin单独提取css,注意要和webpack4版本兼容，也要升级到4
+1.babel-loader需要在全局编写一个.bablerc,然后修改对应的webpack.congfig中的rules;<br>
+2.如果使用extract-text-webpack-plugin单独提取css,注意要和webpack4版本兼容，也要升级到4;<br>
