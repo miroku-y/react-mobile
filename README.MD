@@ -45,6 +45,9 @@
 │       ├── enum.js
 │       └── eventProxy.js
 └── webpack.config.js
+
+### 概览
+![](https://github.com/yangdongMC/react-mobile/blob/master/src/images/show.gif)
 ### 涉及知识
 1.react 合成事件的使用，作用于表格上面的导航栏，可单独滑动，可点击滚动;
 2.react 兄弟组件间的数据传递，采用发布--订阅的方法实现;
