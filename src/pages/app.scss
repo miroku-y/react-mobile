@@ -1,0 +1,62 @@
+$top_color:#00a2ff;
+:global{
+    ul,li{
+        list-style-type: none;
+    }
+    ul,li,p,dl,dt,dd{
+        padding:0;
+        margin:0;
+    }
+}
+.page{
+    background-color: #fff;
+}
+.rank_top{
+    padding:0.45rem 0.59rem 0 0.59rem;
+    overflow: hidden;
+    background-color:$top_color;
+    .rank_share,.rank_user{
+        margin-top:0.18rem;
+        float:right;
+    }
+}
+.tabs{
+    :global{
+        .am-tabs-default-bar-top{
+            background-color: $top_color !important;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 0 .65rem;
+        }
+        .am-tabs-default-bar-tab-active{
+            color:#fff;
+        }
+        .am-tabs-default-bar-underline{
+            border: none;
+            border-bottom: .22rem solid #fff;
+        }
+    }
+    .headThead{
+        background-color:$top_color;
+        height: 2.2rem;
+        line-height: 2.3rem;
+        color:#fff;
+        display:none;
+        span{
+            display:inline-block;
+            background: url('../images/class_square.png') no-repeat;
+            background-size: 0.707rem 0.28rem;
+            background-position: 0 100%;
+        }
+        span:first-child{
+            margin-left:2%;
+        }
+    }
+    .showNav{
+        display:block;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 100;
+    }
+}

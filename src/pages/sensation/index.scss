@@ -1,0 +1,35 @@
+$top_color:#00a2ff;
+.rank_kol_channels{
+    padding: 1rem 0;
+    border-bottom: 1px dashed #e4e4e4;
+    margin: 0 .59rem;
+    ul{
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        li{
+            float: left;
+            dl dt{
+                width:1.7rem;
+                height:1.7rem;
+                margin:0 auto;
+            }
+            dl dd {
+                margin-top:.6rem;
+                color:#fff;
+                font-size:12px;
+                padding:.2rem;
+                border-radius: .2rem;
+                color: #999;
+            }
+            .ddActive{
+                background-color:$top_color;
+                color:#fff;
+            }
+            dl dt img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+}

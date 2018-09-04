@@ -1,0 +1,114 @@
+$top_color:#00a2ff;
+.rank{
+    .thead{
+        background-color:$top_color;
+        height: 2.2rem;
+        line-height: 2.3rem;
+        color:#fff;
+        span{
+            display:inline-block;
+            background: url('../../images/class_square.png') no-repeat;
+            background-size: 0.707rem 0.28rem;
+            background-position: 0 100%;
+        }
+        span:first-child{
+            margin-left:2%;
+        }
+    }
+    
+    .tbody{
+        .tr{
+            .trLine{
+                height:2.83rem;
+                line-height: 2.83rem;
+                border-bottom: 1px solid #f4f4f4;
+                position: relative;
+            }
+            .trLine .ranking{
+                width: 1rem;
+                height: 1.5rem;
+                position: relative;
+                top: 0.5rem;
+            }
+            .trLine span{
+                display:inline-block;
+                font-size: 12px;
+                color:#333;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .trLine span:last-child{
+                color:#ff8400;
+            }
+            .trLine .arrow{
+                width: 15px; 
+                height: 100%;
+                position: absolute;
+                right: .5rem;
+                top: .1rem;
+                cursor: pointer;
+            }
+            .trLine .arrow img{
+                width: 100%; height: 35%; 
+                transform: rotate(0deg);
+                transition: all .3s;
+            }
+            .rotateImg{
+                transform: rotate(180deg)!important;
+            }
+            .trDetail{
+                line-height: 1.5rem;
+                background: #fff;
+                display:none;
+                padding: .5rem 0;
+            }
+            .showDetail{
+                display:block;
+                position: relative;
+            }
+            .showDetail::before{
+                content: '';
+                width: 100%;
+                height: .13rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                box-shadow: 0 0.05rem 0.2rem #f4f4f4;
+                background: #f4f4f4;
+            }
+            .showDetail::after{
+                content: '';
+                width: 100%;
+                height: .3rem;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                box-shadow: 0 -0.2rem 0.2rem #f4f4f4 inset;
+            }
+            .trDetail .counts{
+                width:90%;
+                margin:auto;
+                thead tr td{
+                    width:30%;
+                    text-align: center;
+                    color:#999;
+                    font-size: 0.7rem;
+                }
+                tbody td{
+                    text-align: center;
+                    font-size: 0.7rem;
+                }
+                tbody td:nth-child(2){
+                    color:#21cbad;
+                }
+                tbody td:nth-child(1){
+                    color:#00a2ff;
+                }
+                tbody td:nth-child(3){
+                    color:#ff8400
+                }
+            }
+        }
+    }
+}
